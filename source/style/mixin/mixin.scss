@@ -1,0 +1,16 @@
+@mixin link_hover($static_color, $hover_color){
+  color: $static_color;
+  transition: $time;
+
+  &:hover{
+    transition: $time;
+    color: $hover_color;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}

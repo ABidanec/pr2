@@ -1,0 +1,19 @@
+section.top-header
+	.l-center
+		.top-header-logo
+			a.top-header-logo__link(href="#" title="Пробоотборник")
+				img.top-header-logo__img(href="assets/img/logo.png" title="Пробоотборник")
+		- var menu = ["Development", "Busines", "Travel", "Design", "Culture", "Contact"];
+		- var submenu = ["html", "css", "js", "svg", "seo"];
+		nav.top-header-nav
+			ul.top-header-nav__list
+				-for(var i=0; i<menu.length; i++)
+					li.top-header-nav__item
+						a.top-header-nav__link(href="#")= menu[i]
+							if menu[i] == "Development"
+								ul.top-header-subnav__list
+									- for(var j=0; j<submenu.length; j++)
+										li.top-header-subnav__item
+											a.top-header-subnav(href="#")= submenu[j]
+
+

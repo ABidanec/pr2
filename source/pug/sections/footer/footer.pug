@@ -1,0 +1,21 @@
+footer.footer
+	.l-center
+		nav.footer-nav
+			- var menu = ["Development", "Busines", "Travel", "Design", "Culture", "Contact"];
+			ul.footer-nav__list
+				-for(var i=0; i<menu.length; i++)
+					li.footer-nav__item
+						a.footer-nav__link(href="#")= menu[i]
+		.footer-contact
+			-var contacts = ["099-4-0000-17", "a.bidanec@ukr.net","sdfhus sdufhudf dfhuwhfwe"];
+			ul.footer-contact__list
+				-for(var i=0; i<contacts.length; i++)
+					if contacts[i] == "sdfhus sdufhudf dfhuwhfwe"
+						li.footer-contact__item= contacts[i]
+					if contacts[i] != "sdfhus sdufhudf dfhuwhfwe"
+						li.footer-contact__item
+							a.footer-contact__link(href="#")= contacts[i]
+		.footer-copyright
+			p Все права защищены 2018					
+					
+						
